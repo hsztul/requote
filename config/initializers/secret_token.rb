@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Requote::Application.config.secret_key_base = 'cb609ca26a83bd1cb8d8f8296d946cf38d2e67fa66ae8b1a11a62e0931b6ec94e0dc925170a59cfd56935519b3c469f30b169b46fdea9d1884e4be2519a11cb1'
+Requote::Application.config.secret_key_base = 'b1e7b2b36e4804b2f9433bac15e71355f705f9495eb444affee354752221113d0b2d8a635716538a20f8f504ad7b53e7bc1bc2cc7f6f9e903aec83a5dd68e12b'
