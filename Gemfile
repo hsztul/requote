@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-ruby '2.0.0'
 gem 'rails', '4.0.0'
 
 
@@ -26,8 +25,10 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
-
+group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
+  gem 'sdoc', require: false
+end
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
@@ -40,34 +41,3 @@ gem 'jbuilder', '~> 1.2'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-
-gem 'bootstrap-sass'
-gem 'devise'
-gem 'figaro'
-gem 'mongoid'
-gem 'sendgrid'
-
-group :development do
-  gem 'better_errors'
-  gem 'binding_of_caller', :platforms=>[:mri_19, :rbx]
-  gem 'hub', :require=>nil
-  gem 'quiet_assets'
-end
-
-group :development, :test do
-  gem 'factory_girl_rails'
-  gem 'rspec-rails'
-  gem 'thin'
-end
-
-group :production do
-  gem 'unicorn'
-end
-
-group :test do
-  gem 'capybara'
-  gem 'database_cleaner'
-  gem 'email_spec'
-  gem 'mongoid-rspec'
-end
-
